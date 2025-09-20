@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jessan Mojica Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <!-- Replace src with your image file -->
+    <img src="images/profile.jpg" alt="Jessan Mojica" class="profile-img">
+    <h1>Jessan Mojica</h1>
+    <p>4th Year Student | Bachelor of Science in Information Technology | Major in Information and Network Security</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a dedicated IT student with expertise in server administration, network configuration, digital forensics, and web development. My technical foundation is complemented by strong leadership, time management, and problem-solving skills. I thrive under pressure and am committed to continuous growth in the field of information technology, aiming to contribute to innovative solutions and digital transformation.
+    </p>
+    <p><strong>Career Goals:</strong> To advance as a cybersecurity and network specialist, leveraging my technical and leadership skills to drive secure, efficient, and innovative IT solutions for organizations.</p>
+  </section>
+    <section>
+      <h2>Resume</h2>
+      <p>You can view or download my resume below:</p>
+  <a href="resume.pdf" target="_blank" class="resume-download-btn">View/Download Resume (PDF)</a>
+    </section>
+
+  <section>
+    <h2>Skills Highlights</h2>
+    <div class="skills-list">
+      <div class="skill">Server Administration</div>
+      <div class="skill">Windows Server Configuration</div>
+      <div class="skill">Network Simulation</div>
+      <div class="skill">VMWare Workstation</div>
+      <div class="skill">Digital Forensics</div>
+      <div class="skill">Fortigate Firewall Configuration</div>
+      <div class="skill">HTML &amp; CSS</div>
+      <div class="soft-skill">Leadership</div>
+      <div class="soft-skill">Handling Pressure</div>
+      <div class="soft-skill">Time Management</div>
+      <div class="soft-skill">Problem Solving</div>
+      <div class="soft-skill">Communication</div>
+      <div class="soft-skill">Decision Making</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Network Infrastructure</h2>
+    <p>This section showcases my experience in designing and implementing network infrastructures.</p>
+    <div class="network-diagram">
+      <img src="images/network-diagram.jpg" alt="Network Infrastructure Diagram" style="width:100%; max-width:600px; border-radius:12px; box-shadow:0 4px 20px rgba(171,107,255,0.15); margin-bottom:1rem; cursor:pointer;" onclick="openModal('networkDiagramModal')" onerror="this.style.display='none';">
+      <br>
+  <a href="FINAL_PBL_INFRASTRUCTURE.pkt" download class="resume-download-btn">Download Network File (.pkt)</a>
+    </div>
+
+    <!-- Modal for Network Diagram -->
+    <div id="networkDiagramModal" class="modal">
+      <div class="modal-content" style="max-width:1100px;">
+        <span class="close" onclick="closeModal('networkDiagramModal')">&times;</span>
+        <h3>Network Infrastructure Diagram</h3>
+  <img src="images/network-diagram.jpg" alt="Network Infrastructure Diagram" style="width:100%; max-width:1000px; border-radius:12px; margin-bottom:1rem; display:block; margin-left:auto; margin-right:auto;" onerror="this.style.display='none';">
+        <h4 style="text-align:center; margin-top:0; margin-bottom:1.5rem; color:#fff; font-size:1.3rem; font-weight:600;">Network Infrastructure of Erovoutika</h4>
+        <div style="color:#fff; background:rgba(44,44,44,0.85); border-radius:8px; padding:1rem 1.5rem; margin-bottom:1.5rem; font-size:1rem; max-width:900px; margin-left:auto; margin-right:auto;">
+          <strong>Interconnected Multi-Branch Network Infrastructure</strong><br>
+          This project demonstrates a fully functional multi-branch network simulation using Cisco Packet Tracer. The setup connects the Makati Main Branch, Manila Branch, and Dubai Branch through routers configured with RIP dynamic routing protocol to enable seamless inter-branch communication.<br><br>
+          The Makati Main Branch serves as the core site, equipped with a firewall (ASA 5506-X), core router, distribution switches, and multiple access switches supporting various VLANs for users, servers, and WiFi. The Manila and Dubai branches feature their own routers, switches, VLAN segmentation, and wireless connectivity, allowing employees to securely access network services across locations.<br><br>
+          This design highlights:
+          <ul style="margin-top:0.5rem;">
+            <li>VLAN segmentation for efficient traffic management.</li>
+            <li>Dynamic routing (RIP) for branch connectivity.</li>
+            <li>DHCP server integration for automated IP assignment.</li>
+            <li>Firewall protection at the core network.</li>
+            <li>Scalable architecture supporting wired and wireless users.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul>
+      <li>Designed secure LAN/WAN topologies for academic project</li>
+      <li>Configured routers, switches, and others</li>
+      <li>Implemented VLANs, network segmentation, and access controls</li>
+      <li>Experience with network simulation tool (Cisco Packet Tracer)</li>
+    </ul>
+  </section>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+      <div class="project-card" onclick="openModal('bizconModal')" style="cursor:pointer;">
+        <div class="project-image">
+          <img src="images/bizcon-interface.jpg" alt="BIZCON Interface" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">BIZCON: Business Management Platform</div>
+      </div>
+      <div class="project-card" onclick="openModal('robolutionModal')" style="cursor:pointer;">
+        <div class="project-image">
+          <img src="images/robolution-interface.jpg" alt="ROBOLUTION Interface" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">ROBOLUTION: Collaborative Robotics Platform</div>
+      </div>
+      <div class="project-card" onclick="openModal('enrollmentModal')" style="cursor:pointer;">
+        <div class="project-image">
+          <img src="images/enrollment-interface.jpg" alt="Enrollment System Interface" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">Online Enrollment System</div>
+      </div>
+      <div class="project-card" onclick="openModal('nutriwebModal')" style="cursor:pointer;">
+        <div class="project-image">
+          <img src="images/nutriweb-interface.jpg" alt="NutriWeb Interface" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">NutriWeb: Health & Fitness Website</div>
+      </div>
+      <div class="project-card" onclick="openModal('gwapoairlinesModal')" style="cursor:pointer;">
+        <div class="project-image">
+          <img src="images/gwapoairlines.jpg" alt="GWAPOAIRLINES" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">GWAPOAIRLINES</div>
+      </div>
+      <div class="project-card" onclick="openModal('arduinoModal')" style="cursor:pointer;">
+        <div class="project-image">
+          <img src="images/arduino-project.jpg" alt="Arduino Based Project" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">Arduino Based Project</div>
+      </div>
+        <div class="project-card" onclick="openModal('bookingWebsiteModal')" style="cursor:pointer;">
+          <div class="project-image">
+            <img src="images/bookingwebsite.jpg" alt="BookingWebsite" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+          </div>
+          <div class="project-title">BookingWebsite</div>
+        </div>
+
+        <!-- Modal for BookingWebsite -->
+        <div id="bookingWebsiteModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('bookingWebsiteModal')">&times;</span>
+            <h3>BookingWebsite</h3>
+            <img src="images/bookingwebsite.jpg" alt="BookingWebsite" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none';">
+            <div style="margin-bottom: 1rem;"><b>Objective:</b> A web-based dining reservation system designed to provide users with a seamless way to book tables online. It aims to enhance customer experience by offering real-time availability, menu browsing, and effortless booking.</div>
+            <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> HTML, CSS, JavaScript, PHP, SQL (database)</div>
+            <div style="margin-bottom: 1rem;"><b>Impact:</b> The system improves convenience for customers and efficiency for restaurants by reducing manual reservations and ensuring instant updates. It also demonstrates practical integration of web design, database management, and dynamic functionality.</div>
+            <ul class="project-features">
+              <li>Real-time table availability</li>
+              <li>Online menu viewing</li>
+              <li>Seamless reservation process</li>
+              <li>Enhanced dining experience</li>
+            </ul>
+          </div>
+        </div>
+  <div id="gwapoairlinesModal" class="modal">
+    <div class="modal-content">
+  <span class="close" onclick="closeModal('gwapoairlinesModal')">&times;</span>
+  <h3>GWAPOAIRLINES</h3>
+  <img src="images/gwapoairlines.jpg" alt="GWAPOAIRLINES" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+  <div style="margin-bottom: 1rem;"><b>Objective:</b> Streamlining Flight Booking: An Integrated Web-based Flight Reservation System using PHP and MySQL is a web-based flight reservation system developed using PHP and MySQL. It aims to simplify the process of booking, managing, and paying for flights through an integrated online platform. The system is designed to provide convenience for passengers while improving efficiency for airline operators.</div>
+  <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> PHP, MySQL, HTML, CSS, JavaScript, Web Hosting Server</div>
+  <div style="margin-bottom: 1rem;"><b>Impact:</b> Faster and more accessible flight booking, reduced manual errors, and improved customer satisfaction. The project also showcases the application of web development and database integration in real-world airline operations.</div>
+      <ul class="project-features">
+        <li>Book, view, and manage flight tickets online</li>
+        <li>Integrated payment system</li>
+        <li>Real-time flight availability</li>
+        <li>User-friendly interface for travelers</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for Arduino Based Project -->
+  <div id="arduinoModal" class="modal">
+    <div class="modal-content">
+  <span class="close" onclick="closeModal('arduinoModal')">&times;</span>
+  <h3>Arduino Based Project</h3>
+  <img src="images/arduino-project.jpg" alt="Arduino Based Project" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+  <div style="margin-bottom: 1rem;"><b>Objective:</b> BIN THERE, DONE THAT: INNOVATIVE WASTE MANAGEMENT WITH SMART DUSTBIN POWERED BY ARDUINO MATERIALS is an Arduino-powered smart dustbin designed to promote hygiene and sustainability through contactless waste disposal. The project aims to automate the waste management process, reduce the risk of contamination, and improve convenience for users in schools, homes, and public spaces.</div>
+  <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> Arduino Uno, Ultrasonic Sensor, Servo Motor, Jumper Wires, Battery (optional), Arduino IDE</div>
+  <div style="margin-bottom: 1rem;"><b>Impact:</b> Improved sanitation, automation in waste handling, and encouragement of eco-friendly practices. The project also serves as a hands-on platform for learning electronics, programming, and sustainable design.</div>
+      <ul class="project-features">
+        <li>Contactless waste disposal</li>
+        <li>Hygienic and convenient operation</li>
+        <li>Customizable features for automation (e.g., waste sorting, IoT integration)</li>
+        <li>Educational value for electronics and robotics learning</li>
+      </ul>
+    </div>
+  </div>
+    </div>
+  <!-- Modal for BIZCON -->
+  <div id="bizconModal" class="modal">
+    <div class="modal-content">
+  <span class="close" onclick="closeModal('bizconModal')">&times;</span>
+  <h3>BIZCON: Business Management Platform</h3>
+  <img src="images/bizcon-interface.jpg" alt="BIZCON Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+  <div style="margin-bottom: 1rem;"><b>Objective:</b> BIZCON is a business management platform designed to streamline operations, enhance collaboration, and provide analytics for small to medium enterprises.</div>
+  <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> HTML, CSS, JavaScript, business analytics, authentication systems</div>
+  <div style="margin-bottom: 1rem;"><b>Impact:</b> Improved workflow, secure document management, actionable analytics, and enhanced team productivity.</div>
+      <ul class="project-features">
+        <li>User authentication and role management</li>
+        <li>Dashboard with business analytics</li>
+        <li>Project and task tracking</li>
+        <li>Team collaboration tools</li>
+        <li>Document management</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for ROBOLUTION -->
+  <div id="robolutionModal" class="modal">
+    <div class="modal-content">
+  <span class="close" onclick="closeModal('robolutionModal')">&times;</span>
+  <h3>ROBOLUTION: Collaborative Robotics Platform</h3>
+  <img src="images/robolution-interface.jpg" alt="ROBOLUTION Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+  <div style="margin-bottom: 1rem;"><b>Objective:</b> ROBOLUTION is a collaborative robotics platform designed to streamline automation tasks for educational and industrial purposes. The project aims to provide tools and resources for building, programming, and managing robots efficiently.</div>
+  <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> Node.js (v14 or higher), npm or yarn, Python (if using robotics scripts), modular robotics, real-time control</div>
+  <div style="margin-bottom: 1rem;"><b>Impact:</b> Enabled hands-on robotics learning, efficient automation, and accessible educational resources for all levels.</div>
+      <ul class="project-features">
+        <li>Modular robot design</li>
+        <li>Easy-to-use programming interface</li>
+        <li>Real-time monitoring and control</li>
+        <li>Educational resources for all levels</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for Enrollment System -->
+  <div id="enrollmentModal" class="modal">
+    <div class="modal-content">
+  <span class="close" onclick="closeModal('enrollmentModal')">&times;</span>
+  <h3>Online Enrollment System</h3>
+  <img src="images/enrollment-interface.jpg" alt="Enrollment System Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+  <div style="margin-bottom: 1rem;"><b>Objective:</b> The Online Enrollment System streamlines student registration by replacing manual processes with a faster, more accurate, and user-friendly platform. It reduces staff workload, ensures efficient record management, and improves the overall enrollment experience.</div>
+  <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> Java, MySQL, web technologies</div>
+  <div style="margin-bottom: 1rem;"><b>Impact:</b> Reduced staff workload, improved accuracy, efficient record management, and enhanced enrollment experience.</div>
+      <ul class="project-features">
+        <li>Database-driven enrollment</li>
+        <li>Efficient record management</li>
+        <li>User-friendly interface</li>
+        <li>Making a database for an enrollment system using Java and MySQL</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for NutriWeb -->
+  <div id="nutriwebModal" class="modal">
+    <div class="modal-content">
+  <span class="close" onclick="closeModal('nutriwebModal')">&times;</span>
+  <h3>NutriWeb: Health & Fitness Website</h3>
+  <img src="images/nutriweb-interface.jpg" alt="NutriWeb Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+  <div style="margin-bottom: 1rem;"><b>Objective:</b> NutriWeb is an interactive website for health and fitness, offering exercise programs, nutrition facts, and a BMI calculator to help users achieve a healthier lifestyle.</div>
+  <div style="margin-bottom: 1rem;"><b>Tools/Tech:</b> JavaScript, CSS, HTML</div>
+  <div style="margin-bottom: 1rem;"><b>Impact:</b> Provided accessible fitness programs, nutrition facts, and BMI calculator to help users achieve a healthier lifestyle.</div>
+      <ul class="project-features">
+        <li>Exercise programs</li>
+        <li>Nutrition facts</li>
+        <li>BMI calculator</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
+  </section>
+
+
+  <section>
+    <h2>Contact &amp; Professional Links</h2>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/jessan-mojica-2377a1373/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Sandara123" target="_blank">GitHub</a>
+      <a href="#">Personal Website</a>
+      <span>Email: jessanmojics@gmail.com</span>
+    </div>
+  </section>
+
+  <!-- Modal for BIZCON -->
+  <div id="bizconModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('bizconModal')">&times;</span>
+      <h3>BIZCON: Business Management Platform</h3>
+      <img src="images/bizcon-interface.jpg" alt="BIZCON Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+      <div class="modal-tech">
+        <strong>Technologies Used:</strong><br>
+        <span class="tech-tag">HTML5</span>
+      <div class="project-card" style="cursor:pointer;" onclick="openModal('bookingWebsiteModal')">
+        <div class="project-image">
+          <img src="images/bookingwebsite.jpg" alt="BookingWebsite" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;" onerror="this.style.display='none'; this.parentNode.innerHTML='No image available'">
+        </div>
+        <div class="project-title">BookingWebsite</div>
+      </div>
+
+      <!-- Modal for BookingWebsite -->
+      <div id="bookingWebsiteModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('bookingWebsiteModal')">&times;</span>
+          <h3>BookingWebsite</h3>
+          <img src="images/bookingwebsite.jpg" alt="BookingWebsite" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none';">
+          <div style="margin-bottom: 1rem;">A web-based booking platform designed for efficient and user-friendly reservations. Features include secure booking, real-time availability, and easy management for both users and administrators.</div>
+          <ul class="project-features">
+            <li>Online booking and reservation system</li>
+            <li>Real-time availability updates</li>
+            <li>User and admin management</li>
+            <li>Responsive design for all devices</li>
+          </ul>
+        </div>
+      </div>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">Business Analytics</span>
+        <span class="tech-tag">Authentication</span>
+      </div>
+      <p><strong>Detailed Description:</strong> BIZCON is a comprehensive business management platform designed to streamline operations for small to medium enterprises. The platform features a modern dashboard with real-time analytics, secure user authentication with role-based access control, and integrated project management tools.</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Role-based user authentication and authorization</li>
+        <li>Interactive dashboard with business analytics and KPIs</li>
+        <li>Project and task tracking with team collaboration</li>
+        <li>Document management with version control</li>
+        <li>Real-time notifications and communication tools</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for ROBOLUTION -->
+  <div id="robolutionModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('robolutionModal')">&times;</span>
+      <h3>ROBOLUTION: Collaborative Robotics Platform</h3>
+      <img src="images/robolution-interface.jpg" alt="ROBOLUTION Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+      <div class="modal-tech">
+        <strong>Technologies Used:</strong><br>
+        <span class="tech-tag">Node.js</span>
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Real-time Control</span>
+        <span class="tech-tag">Modular Design</span>
+      </div>
+      <p><strong>Detailed Description:</strong> ROBOLUTION is an innovative collaborative robotics platform that bridges the gap between educational learning and industrial automation. The platform provides intuitive tools for designing, programming, and controlling robotic systems.</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Modular robot design with drag-and-drop interface</li>
+        <li>Visual programming environment for beginners</li>
+        <li>Real-time monitoring and control systems</li>
+        <li>Comprehensive educational resources and tutorials</li>
+        <li>Integration with popular robotics hardware</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for Enrollment System -->
+  <div id="enrollmentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('enrollmentModal')">&times;</span>
+      <h3>Online Enrollment System</h3>
+      <img src="images/enrollment-interface.jpg" alt="Enrollment System Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+      <div class="modal-tech">
+        <strong>Technologies Used:</strong><br>
+        <span class="tech-tag">Java</span>
+        <span class="tech-tag">MySQL</span>
+        <span class="tech-tag">Web Technologies</span>
+        <span class="tech-tag">Database Design</span>
+      </div>
+      <p><strong>Detailed Description:</strong> A comprehensive online enrollment system that digitalizes the entire student registration process. The system replaces manual paperwork with an efficient, user-friendly digital platform that ensures data accuracy and reduces administrative workload.</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Secure student registration and data management</li>
+        <li>Automated document verification and processing</li>
+        <li>Real-time enrollment status tracking</li>
+        <li>Administrative dashboard for staff management</li>
+        <li>Integrated payment processing system</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Modal for NutriWeb -->
+  <div id="nutriwebModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('nutriwebModal')">&times;</span>
+      <h3>NutriWeb: Health & Fitness Website</h3>
+      <img src="images/nutriweb-interface.jpg" alt="NutriWeb Interface" style="width: 100%; border-radius: 8px; margin-bottom: 1rem;" onerror="this.style.display='none'">
+      <div class="modal-tech">
+        <strong>Technologies Used:</strong><br>
+        <span class="tech-tag">JavaScript</span>
+        <span class="tech-tag">HTML5</span>
+        <span class="tech-tag">CSS3</span>
+        <span class="tech-tag">Responsive Design</span>
+      </div>
+      <p><strong>Detailed Description:</strong> NutriWeb is an interactive health and fitness website designed to promote healthy lifestyles through accessible tools and resources. The platform combines nutrition education with practical fitness tools to help users achieve their health goals.</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Interactive BMI calculator with health recommendations</li>
+        <li>Comprehensive exercise programs for all fitness levels</li>
+        <li>Detailed nutrition facts database</li>
+        <li>Personalized meal planning tools</li>
+        <li>Progress tracking and goal setting</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = "none";
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = "none";
+      }
+    }
+  </script>
